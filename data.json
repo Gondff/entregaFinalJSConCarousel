@@ -1,0 +1,19 @@
+[
+    {
+        "id":1,
+        "name":"UTN Regional haedo",
+        "img": "https://res.cloudinary.com/dqeitb6bh/image/upload/v1690317634/universidad-01_ljtqnf.png"
+    },
+    {
+        "id":2,
+        "name":"universidad de Moron",
+        "img": "https://res.cloudinary.com/dqeitb6bh/image/upload/v1690317712/universidad-03_emvjzv.png"
+    },
+    {
+        "id":3,
+        "name":"universidad de Palermo",
+        "img":"https://res.cloudinary.com/dqeitb6bh/image/upload/v1690317518/universidad-02_hkoglg.png"
+    }
+
+]   
+

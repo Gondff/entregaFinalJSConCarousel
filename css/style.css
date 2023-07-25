@@ -1,0 +1,196 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  /* Tipografias */
+  
+  /* Fuente externa */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+  
+  /* Acomodar Header , logo mas barra de nvegacion */
+  .header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgb(102, 102, 102), grey);
+    flex-wrap: wrap;
+    min-height: 10%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Menu hamburguesa */
+  
+  .nav-link a:hover{
+    color: black;
+  }
+  
+  .nav-link{
+    color: white;
+    font-weight: bold;
+    padding-right: 9px;
+  }
+  
+  .navbar-toggler{
+    border: none !important;
+  
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: none !important;
+  } 
+  
+  .nav-item a:hover{
+    color: black;
+  }
+  
+  
+  
+  
+  /* Main */
+  
+  /* Titulos y parrafo */
+  h1{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 20px;
+    color: white;
+  }
+  p{
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .negrita{
+    font-weight: bold;
+    font-size: large;;
+  }
+  
+  .main{
+    min-height: 85%;
+    background-image: linear-gradient(to bottom, rgb(95, 95, 95), rgb(204, 204, 204));
+  }
+    /* Estilos para el formulario */
+    h2{
+      text-align: center;
+      color: white;
+      margin: 5px;
+      padding: 2px;
+  }
+  .bienvenidos{
+      text-align: left;
+      color: white;
+      margin: 25px;
+      padding: 6px;
+  }
+
+  .imagenes-slide{
+    padding-top: 25px;
+  }
+
+  .form {
+      text-align: center;
+    
+    }
+    
+    .inputs {
+      border-radius: 10px;
+      padding: 5px;
+      background-color: lightblue;
+    }
+    
+    .smaller {
+      font-size: 12px;
+      background-color: rgb(0, 174, 255);
+    }
+    
+    .grupo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .grupo div {
+      margin-bottom: 10px;
+    }
+
+    .etiquetas{
+        background-color: lightblue;
+    }
+
+    .estudiantes-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card{
+        margin: 3px;
+    }
+    
+    
+  .parrafoinicial{
+    color: rgb(204, 224, 224);
+    text-indent: 10px;
+    margin-left: 30px;
+    margin-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 0rem;
+  }
+
+  .parrafofinal{
+    color: rgb(204, 224, 224);
+    text-indent: 10px;
+    margin-left: 30px;
+    margin-right: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 40px;
+  }
+
+.conclusiones{
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+  padding: 12px;
+  margin-bottom: 0;
+}
+
+#entidadesCarousel{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+#entidadesCarousel img{
+  max-width: 100%;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(88, 105, 99);
+  min-height: 5%;
+  color: white;
+  padding-top: 8px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
