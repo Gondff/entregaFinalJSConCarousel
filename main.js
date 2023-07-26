@@ -1,3 +1,5 @@
+let cardsVisible = false;
+
 let entidadesCarousel = document.querySelector("#entidadesCarousel .carousel-inner");
 
 fetch("data.json")
@@ -108,6 +110,8 @@ function dniDuplicado(dni){
 
 
   function listarEstudiantes() {
+    const contenedorEstudiantes = document.getElementById("estudiantesContainer");
+    
     if (curso.length === 0) {  //me lo muestra si elimino el unico alumno, chequear
       Swal.fire({
         icon: "warning",
@@ -116,9 +120,10 @@ function dniDuplicado(dni){
     });
       
     } else {
-      const contenedorEstudiantes = document.getElementById("estudiantesContainer");
+      if(cardsVisible){
+    
       contenedorEstudiantes.innerHTML = "";
-  
+      }
       curso.forEach((estudiante, index) => {
         // Crea una card por estudiante
         const tarjeta = document.createElement("div");
@@ -229,7 +234,8 @@ function borrarLocalStorage() {
     }).then((willdelete) => {
         if(willdelete.isConfirmed){
           localStorage.removeItem("curso");
-        curso =[];//sin esto no se borra si las cards no estan visibles
+        curso =[];
+        cardsVisible = false;
         Swal.fire({
           icon:"success",
           text:"Se ha borrado el Local Storage",
@@ -240,6 +246,10 @@ function borrarLocalStorage() {
           showConfirmButton:false,
           timer:1500,
         });  
+
+        const contenedorEstudiantes = document.getElementById("estudiantesContainer");
+        contenedorEstudiantes.innerHTML = "";
+
         }else{
           Swal.fire({
             title:"Cancelado",
@@ -272,3 +282,4 @@ function enviarFormulario(){
 
 // Cargar datos del localStorage al array curso cuando inicia
 cargarDesdeLocalStorage();
+enviarFormulario()
