@@ -52,8 +52,6 @@
   }
   
   
-  
-  
   /* Main */
   
   /* Titulos y parrafo */
@@ -172,16 +170,37 @@
   max-width: 100%;
 }
 
+/*Formulario de contacto*/
+
+.mb-4{
+  margin-bottom: 0rem !important;
+  padding-bottom: 2rem;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.form-control{
+  background-color: lightblue !important;
+}
+
+.form-control:not(textarea):focus,
+.form-control:not(textarea):focus {
+    background-color: lightblue !important;
+    box-shadow: none !important;
+  }
+
 /* Footer */
 .footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(88, 105, 99);
+  background-image: linear-gradient(to bottom, rgb(102, 102, 102), grey);
   min-height: 5%;
   color: white;
   padding-top: 8px;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.5);
 }
   
+
   
   
   
