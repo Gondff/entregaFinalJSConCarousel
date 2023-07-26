@@ -249,5 +249,21 @@ function borrarLocalStorage() {
   });
 }
 
+//Funcion para el toastify en el formulario de envio
+function enviarFormulario(){
+  
+  const email = document.getElementById("exampleFormControlInput1").value;
+
+  //uso trim para validar el correo
+  if(email.trim() !==""){
+      Toastify({
+        text: "Enviando...",
+        duration:2000,
+        gravity:"bottom",
+        backgroundColor:"blue",
+      }).showToast();
+  }
+}
+
 // Cargar datos del localStorage al array curso cuando inicia
 cargarDesdeLocalStorage();
