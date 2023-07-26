@@ -259,10 +259,15 @@ function enviarFormulario(){
       Toastify({
         text: "Enviando...",
         duration:2000,
-        gravity:"bottom",
+        gravity:"top",
         backgroundColor:"blue",
       }).showToast();
   }
+
+  //reinicio los campos del formulario
+  document.getElementById("exampleFormControlInput1").value = "";
+  document.getElementById("exampleFormControlTextarea1").value ="";
+
 }
 
 // Cargar datos del localStorage al array curso cuando inicia
